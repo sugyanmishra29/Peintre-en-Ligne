@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>Peintre en Ligne</title>
+    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css" integrity="sha384-BVYiiSIFeK1dGmJRAkycuHAHRg32OmUcww7on3RYdg4Va+PmSTsz/K68vbdEjh4u" crossorigin="anonymous">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body style="background-color: #c5c5c5be;">
+    <nav class="navbar navbar-default navbar-fixed-top navbar-inverse bg-primary">
+
+        <!-- Inside of a Container -->
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
+    
+                    <!--  Code for the hamburger icon-->
+                    <span class="sr-only">Toggle navigation</span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                    <span class="icon-bar"></span>
+                </button>
+
+                <a class="navbar-brand">Peintre en Ligne - Online Paint Tool</a>
+            </div>
+
+            <!-- Anything inside of collapse navbar-collapse goes into the "hamburger" -->
+            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul class="nav navbar-nav">
+                    <li><a href="test.html" type="button" target="_blank">New<span class="sr-only">(current)</span></a></li>
+                    <!-- target blank means if you click on this button, you will be redirected to test.html in a new tab-->
+                    <li><a id="download" href="#" download="image.png" type="button">Save</a></li>
+                    <li>
+                        <a id="erase" type="button">Erase</a>
+                    </li>
+                </ul>
+
+                <form class="navbar-form navbar-left" role="search">
+                    <div class="form-group">
+                        <a type="button" class="btn btn-secondary" style="color: #c5c5c5be;">Paintbrush Size =></a>
+                        <input id="size" type="text" class="form-control" placeholder="in pixels" aria-label="Input group example" aria-describedby="btnGroupAddon">
+                    </div>
+                    <a type="button" class="btn btn-secondary" style="color: #c5c5c5be;">Color Picker =></a>
+                    <input id="hex" type="color" placeholder="">
+                </form>
+
+                <!-- Stuff on the Right -->
+
+                <ul class="nav navbar-nav navbar-right">
+                    <li><a href="#">Project's Github link</a></li>
+                </ul>
+
+            </div>
+            <!-- /.navbar-collapse -->
+        </div>
+        <!-- /.container-fluid -->
+    </nav>
+
+    <canvas id="draw"></canvas>
+
+    <script src="app.js"></script>
+    <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+
+</body>
+
+</html>
