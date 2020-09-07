@@ -13,25 +13,13 @@ h2 {
     text-align: center;
 }
 
-#colourOne {
-    height: 200px;
-    opacity: 0.5;
-    margin: 0;
-    top: 0;
-    position: absolute;
-    width: 100%;
-}
-
-#colourTwo {
-    height: 200px;
-    opacity: 0.5;
-    margin: 0;
-    bottom: 0;
-    position: absolute;
-    width: 100%;
-}
-
 #footnote {
     text-align: right;
     padding-right: 1em;
+    color: whitesmoke;
+    size: 24px;
+}
+
+#background {
+    background-image: linear-gradient(black, grey);
 }
