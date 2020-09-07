@@ -4,3 +4,11 @@
     border: 1px solid #000000;
     background-color: whitesmoke;
 }
+
+p {
+    text-align: center;
+}
+
+#canvas {
+    text-align: center;
+}

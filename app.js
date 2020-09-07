@@ -20,12 +20,9 @@ pen.addEventListener("mousedown", changePen);
 brush.addEventListener("mousedown", changebrush);
 erase.addEventListener("mousedown", resize);
 download.addEventListener("click", function(e) {
-
-
     var image = canvas.toDataURL("image/png")
         .replace("image/png", "image/octet-stream");
     download.setAttribute("href", image);
-
 });
 
 
