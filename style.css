@@ -12,3 +12,21 @@ p {
 #canvas {
     text-align: center;
 }
+
+#colourOne {
+    height: 200px;
+    opacity: 0.5;
+    margin: 0;
+    top: 0;
+    position: absolute;
+    width: 100%;
+}
+
+#colourTwo {
+    height: 200px;
+    opacity: 0.5;
+    margin: 0;
+    bottom: 0;
+    position: absolute;
+    width: 100%;
+}

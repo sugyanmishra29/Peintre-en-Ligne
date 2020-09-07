@@ -9,7 +9,13 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body style="background-color: #c5c5c5be;">
+<body id="background" onload="firstColour()" onclick="firstColour()">
+    <div id="colourOne">
+        <h3 id="topColour"></h3>
+    </div>
+    <div id="colourTwo">
+        <h3 id="bottomColour"></h3>
+    </div>
     <nav class="navbar navbar-default navbar-inverse">
 
         <!-- Inside of a Container -->
@@ -35,14 +41,14 @@
                     </li>
                     <!-- target blank means if you click on this button, you will be redirected to test.html in a new tab-->
                     <li><a id="download" download="image.png" type="button" class="btn btn-dark">Download</a></li>
-                    <li>
+                    <!-- <li>
                         <div class="input-group">
                             <div class="input-group-prepend">
                                 <a type="button" class="btn btn-dark" disabled style="color: #ffffff;">Upload below</a>
                             </div>
                             <input id="upload" type="file" class="form-control" accept="image/*">
                         </div>
-                    </li>
+                    </li> -->
                     <li>
                         <a id="erase" type="button" class="btn btn-dark">Erase</a>
                     </li>
@@ -62,7 +68,7 @@
                 <!-- Stuff on the Right -->
 
                 <ul class="nav navbar-nav navbar-right">
-                    <li><a href="https://github.com/sugyanmishra29/Peintre-en-Ligne">Project's Github link</a></li>
+                    <li><a href="https://github.com/sugyanmishra29/Peintre-en-Ligne">Github Repo</a></li>
                 </ul>
                 <!-- /.navbar-collapse -->
             </div>
@@ -75,32 +81,34 @@
         </div>
     </div>
     <div class="container">
-        <h2><strong>How to use?</strong></h2>
-        <ul>
-            <li>
-                <h4><em>New:</em> Clicking this will open a new tab with a new canvas</h4>
-            </li>
-            <li>
-                <h4><em>Erase:</em> Clicking this will wipe out all the content in the canvas</h4>
-            </li>
-            <li>
-                <h4><em>Download:</em> Use this feature to save your painting locally as a PNG file</h4>
-            </li>
-            <li>
-                <h4><em>Pen:</em> Say you draw a line. It'll then have circular ends</h4>
-            </li>
-            <li>
-                <h4><em>Brush:</em> Say you draw a line. It'll then have rectangular ends</h4>
-            </li>
-            <li>
-                <h4><em>Paintbrush Size:</em> Enter paintbrush size (in pixels) in textfield. Do not press ENTER key after input</h4>
-            </li>
-            <li>
-                <h4><em>Color Picker:</em> Choose color of pen/brush using the color picker</h4>
-            </li>
-        </ul>
-        <!-- <p>New: Clicking this will open a new tab with a new canvas</p>
+        <div class="jumbotron">
+            <h2><strong>How to use?</strong></h2>
+            <ul>
+                <li>
+                    <h4><em>New:</em> Clicking this will open a new tab with a new canvas</h4>
+                </li>
+                <li>
+                    <h4><em>Erase:</em> Clicking this will wipe out all the content in the canvas</h4>
+                </li>
+                <li>
+                    <h4><em>Download:</em> Use this feature to save your painting locally as a PNG file</h4>
+                </li>
+                <li>
+                    <h4><em>Pen:</em> Say you draw a line. It'll then have circular ends</h4>
+                </li>
+                <li>
+                    <h4><em>Brush:</em> Say you draw a line. It'll then have rectangular ends</h4>
+                </li>
+                <li>
+                    <h4><em>Paintbrush Size:</em> Enter paintbrush size (in pixels) in textfield. Do not press ENTER key after input</h4>
+                </li>
+                <li>
+                    <h4><em>Color Picker:</em> Choose color of pen/brush using the color picker</h4>
+                </li>
+            </ul>
+            <!-- <p>New: Clicking this will open a new tab with a new canvas</p>
         <p>Erase: Clicking this will wipe out all the content in the canvas</p> -->
+        </div>
     </div>
 
     <script src="app.js"></script>
