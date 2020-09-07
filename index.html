@@ -9,13 +9,7 @@
     <link rel="stylesheet" href="style.css">
 </head>
 
-<body id="background" onload="firstColour()" onclick="firstColour()">
-    <div id="colourOne">
-        <h3 id="topColour"></h3>
-    </div>
-    <div id="colourTwo">
-        <h3 id="bottomColour"></h3>
-    </div>
+<body id="background">
     <nav class="navbar navbar-default navbar-inverse">
 
         <!-- Inside of a Container -->
@@ -76,12 +70,9 @@
     </nav>
     <div class="container">
         <div class="jumbotron">
-            <p id="canvas">Your canvas</p>
+            <h2 id="canvas">Your canvas</h2>
             <canvas id="draw"></canvas>
-        </div>
-    </div>
-    <div class="container">
-        <div class="jumbotron">
+            <br>
             <h2><strong>How to use?</strong></h2>
             <ul>
                 <li>
@@ -100,22 +91,22 @@
                     <h4><em>Brush:</em> Say you draw a line. It'll then have rectangular ends</h4>
                 </li>
                 <li>
-                    <h4><em>Paintbrush Size:</em> Enter paintbrush size (in pixels) in textfield. Do not press ENTER key after input</h4>
+                    <h4><em>Paintbrush Size:</em> Enter paintbrush size (in pixels) in textfield. Do not press ENTER key after input
+                    </h4>
                 </li>
                 <li>
                     <h4><em>Color Picker:</em> Choose color of pen/brush using the color picker</h4>
                 </li>
             </ul>
-            <!-- <p>New: Clicking this will open a new tab with a new canvas</p>
-        <p>Erase: Clicking this will wipe out all the content in the canvas</p> -->
         </div>
     </div>
+
+
 
     <script src="app.js"></script>
     <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
     <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
     <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
-
 </body>
 
 </html>
